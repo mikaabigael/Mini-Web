@@ -1,0 +1,50 @@
+/*Mengatur form-group agar tidak terpengaruh float*/
+
+.form-group {
+    clear: both;
+}
+
+
+/*Mengatur lebar label 30% dengan teks bold*/
+
+.form-group label {
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width: 30%;
+    font-weight: bold;
+}
+
+
+/* Mengatur lebar .input 50% dan sejajar dengan label*/
+
+.form-group .input {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+
+/*Mengatur input radio, tombol submit dan tombol reset*/
+
+input[type=radio] {
+    width: 50px;
+}
+
+.tombol.simpan {
+    background: #038ade;
+}
+
+.tombol.reset {
+    background: #fb8307;
+}
+
+
+/* Membuat tampilan form menumpuk pada layar kecil*/
+
+@media (max-width:700px) {
+    .form-group label,
+    .form-group .input {
+        width: 100%;
+    }
+}
